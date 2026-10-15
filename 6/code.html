@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#410004", "on-primary": "#5b1917", "on-primary-fixed": "#3e0405", "surface-container-highest": "#5c2123", "surface-tint": "#ffb3ad", "tertiary-container": "#510006", "on-secondary": "#650a00", "surface-container-high": "#4e1719", "on-secondary-container": "#ff9a86", "outline": "#a28c89", "surface-bright": "#622627", "tertiary-fixed": "#ffdad7", "surface-container-low": "#3b080c", "surface-variant": "#5c2123", "primary-fixed": "#ffdad6", "on-background": "#ffdad8", "on-error": "#690005", "error": "#ffb4ab", "primary-fixed-dim": "#ffb3ad", "surface-dim": "#2f0205", "on-secondary-fixed": "#3f0400", "background": "#2f0205", "error-container": "#93000a", "tertiary": "#ffb3ad", "outline-variant": "#544341", "on-surface-variant": "#dac1be", "primary-container": "#4a0c0c", "on-tertiary": "#68000a", "tertiary-fixed-dim": "#ffb3ad", "inverse-primary": "#964641", "primary": "#ffb3ad", "surface-container": "#400c10", "secondary-fixed-dim": "#ffb4a5", "on-secondary-fixed-variant": "#8a1c09", "on-tertiary-container": "#f5514e", "secondary": "#ffb4a5", "secondary-container": "#8a1c09", "on-tertiary-fixed-variant": "#930013", "on-error-container": "#ffdad6", "on-primary-container": "#cd716a", "inverse-on-surface": "#561d1f", "secondary-fixed": "#ffdad3", "surface": "#2f0205", "inverse-surface": "#ffdad8", "surface-container-lowest": "#270003", "on-surface": "#ffdad8", "on-primary-fixed-variant": "#792f2b" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "gutter": "1rem", "gutter-mobile": "0.75rem", "margin": "1rem", "space-xs": "0.25rem", "margin-tablet": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2rem" }, "fontFamily": { "label-sm": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "800" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "fontWeight": "800" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs flex-1 min-w-0"><button class="w-11 h-11 -ml-space-xs flex items-center justify-center text-on-surface hover:text-primary transition-colors rounded-full shrink-0" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="DTIE app logo.png" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1WnncMAYqaZykBZDGA8_ztkGjOjcdFOhT2MSgsz0PYFmbRjiWhD2R9ITwAT9bjy5oRXtol2q3UlqcwCrCkmDfCQb6HOmCuvDoh03LrCCp-UXqAKtVRtCkMJWZJjmr6JvKBjFm-Y_hq2pUMKNC6T8TdH4HfrbC636MzAxO74XHZVYce8kThZ7gLz87TLcTEGVr3N6n3tbijUGVq7cIsQPb7OsdRHtn3EPojnzHLfQa70oxv377ckTNijk-f0F-iOJKpJJuS0aJoMZss"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate ml-space-xs">Stream Details</h1></div><div class="flex items-center gap-space-xs shrink-0"><button class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors rounded-full"><span class="material-symbols-outlined text-[22px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-28">
+<div class="px-gutter pt-space-md flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 self-start px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase">NEP 2020 Multi-Disciplinary Track • Class 11 &amp; 12</span>
+</div>
+<h2 class="font-display-lg-mobile text-display-lg-mobile text-on-surface tracking-tight">Applied Design &amp; Technology</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Fusing Creative Systems, Computer Applications, and Applied Economics into high-growth digital era careers.</p>
+</div>
+<div class="flex gap-2.5 overflow-x-auto pb-1 -mx-gutter px-gutter no-scrollbar">
+<div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high shrink-0 shadow-sm">
+<div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px] text-on-primary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Aptitude Match</span>
+<span class="font-headline-sm text-headline-sm text-primary">94% Fit</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high shrink-0 shadow-sm">
+<div class="w-7 h-7 rounded-full bg-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px] text-on-secondary">payments</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Starting CTC</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">₹7–14 LPA</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high shrink-0 shadow-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px] text-secondary">sentiment_satisfied</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Board Stress</span>
+<span class="font-headline-sm text-headline-sm text-secondary">Low-Medium</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high shrink-0 shadow-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">NEP Alignment</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">NSQF L-4.5</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+        No Mandatory Calculus Trap
+      </span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px] text-secondary">school</span>
+        UCEED / NID / CUET Gateway
+      </span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px] text-primary">trending_up</span>
+        +34% YoY Hiring Surge
+      </span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">psychology</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Personalized Psychometric Fit</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Synthesized from Ananya's Class 10 Dossier</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">Matched</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="p-3 rounded-lg bg-surface-container-high flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">view_in_ar</span>
+              Spatial &amp; Visual Intelligence
+            </span>
+<span class="font-label-md text-label-md text-primary font-bold">92%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 92%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Directly maps to UI/UX Architecture, 3D Prototyping, and Human-Computer Interaction track.</p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-high flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">lightbulb</span>
+              Creative Problem-Solving
+            </span>
+<span class="font-label-md text-label-md text-secondary font-bold">86%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 86%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bypasses rote memorization in favor of design thinking and applied capstone synthesis.</p>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-primary-container/80 flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Counselor Endorsement</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mrs. Sunita Sharma marked this stream as Top Recommended over conventional PCM to optimize Ananya's strengths.</p>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-highest text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">info</span>
+<span class="font-body-sm text-body-sm"><strong class="text-on-surface">Marks Trap De-biased:</strong> 70% admission weightage in target design schools rests on portfolio &amp; aptitude exams, not 95%+ board math cutoff.</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Curriculum Architecture</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4 Compulsory Subjects + 1 Applied Skill Elective</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">18 Credits / Wk</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-surface-container-highest flex items-center justify-center text-primary font-bold font-label-md text-label-md shrink-0">01</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Computer Applications &amp; Web Informatics</h4>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shrink-0">4 Credits</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Modern Python script modeling, UI component frameworks, semantic responsive systems, and foundational data structures.</p>
+<div class="flex items-center gap-3 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 5 Hrs/Wk Lab
+            </span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">terminal</span> Code Studio
+            </span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-surface-container-highest flex items-center justify-center text-primary font-bold font-label-md text-label-md shrink-0">02</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Applied Mathematics &amp; Statistics</h4>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shrink-0">4 Credits</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Applied coordinate logic, financial statistics, algorithmic modeling, and decision matrices. No calculus over-indexation.</p>
+<div class="flex items-center gap-3 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 4 Hrs/Wk Theory
+            </span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">insights</span> Applied Math
+            </span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-secondary-container flex items-center justify-center text-on-secondary-container font-bold font-label-md text-label-md shrink-0">03</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Design Thinking &amp; Innovation</h4>
+<span class="font-label-sm text-label-sm text-secondary">NSQF Level 4 Skill Major</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-secondary font-label-sm text-label-sm shrink-0">3 Credits</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Studio-based rapid prototyping, user empathy mapping, Figma wireframing, industrial ergonomics, and portfolio curation.</p>
+<div class="flex items-center gap-3 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 6 Hrs/Wk Studio
+            </span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">draw</span> Portfolio Heavy
+            </span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-surface-container-highest flex items-center justify-center text-primary font-bold font-label-md text-label-md shrink-0">04</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Economics &amp; Consumer Psychology</h4>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shrink-0">4 Credits</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Macro/micro economic incentives, market dynamics, digital consumption behaviors, and tech product monetization models.</p>
+<div class="flex items-center gap-3 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 4 Hrs/Wk
+            </span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">monitoring</span> Market Dynamics
+            </span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-surface-container-highest flex items-center justify-center text-primary font-bold font-label-md text-label-md shrink-0">05</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">English &amp; Technical Communication</h4>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shrink-0">3 Credits</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Design spec documentation, analytical synthesis, persuasive oral pitching, and professional discourse.</p>
+<div class="flex items-center gap-3 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 3 Hrs/Wk
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">record_voice_over</span> Pitch &amp; Writing
+            </span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">2-Year Academic &amp; Portfolio Roadmap</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Clear milestones engineered to build college admissions and competitive edge simultaneously.</p>
+</div>
+<div class="relative pl-6 flex flex-col gap-6">
+<div class="absolute left-2.5 top-2 bottom-2 w-0.5 bg-surface-container-highest"></div>
+<div class="relative flex flex-col gap-1">
+<div class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-primary ring-4 ring-surface-container-low"></div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase">Class 11 • Terms 1 &amp; 2</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Foundations</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Design Studio &amp; Tech Fundamentals</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Master Figma, Adobe Creative Cloud, and introductory Python. Submit initial entries for the National Design Olympiad and build project repository.</p>
+</div>
+<div class="relative flex flex-col gap-1">
+<div class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-secondary ring-4 ring-surface-container-low"></div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Class 12 • Term 3</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Competitive Prep</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">UCEED / NID Mocks &amp; CUET Prep</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Targeted entrance series, visual observation test simulations, and mentor review of student design folio.</p>
+</div>
+<div class="relative flex flex-col gap-1">
+<div class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-on-secondary-container ring-4 ring-surface-container-low"></div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-secondary-container font-bold uppercase">Class 12 • Term 4</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Capstone</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Board Exams &amp; Institutional Admissions</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">CBSE Board examination cycle, final capstone project presentation, and direct seat counseling at partner universities.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">High-Impact Career Gateways</h3>
+<span class="font-label-sm text-label-sm text-primary">Industry Trajectory</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-3 rounded-lg bg-surface-container-high flex flex-col gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">devices</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Product / UX Architect</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Avg ₹9.5 LPA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Designing digital application experiences for fintech and consumer tech.</p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-high flex flex-col gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Creative Technologist</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Avg ₹8.8 LPA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bridging interactive front-end code, web animations, and graphic design.</p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-high flex flex-col gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">sports_esports</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Metaverse &amp; Game Artist</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Avg ₹11.2 LPA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Interactive 3D environments, spatial computing, and game user experience.</p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-high flex flex-col gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">design_services</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Interaction Designer</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Avg ₹8.2 LPA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Physical product computing, IoT interfaces, and automotive dash systems.</p>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Top Target Institutions</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Admissions via Portfolio</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-primary-container flex items-center justify-center text-primary font-bold font-label-md text-label-md">NID</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">National Institute of Design</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">B.Des (DAT Prelims &amp; Mains)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Ahmedabad</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-primary-container flex items-center justify-center text-primary font-bold font-label-md text-label-md">IIT</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">IIT Bombay (IDC School)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">B.Des via UCEED (Open to Non-PCM)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Mumbai</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-secondary font-bold font-label-md text-label-md">SMI</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Srishti Manipal Institute</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">B.Voc &amp; B.Des Creative Tech</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Bengaluru</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-on-surface font-bold font-label-md text-label-md">DU</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Delhi University &amp; Ashoka</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CUET Domain Mapping Eligible</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">NCR</span>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 inset-x-0 z-40 bg-surface-container-lowest/90 backdrop-blur-xl p-gutter pb-safe shadow-[0_-4px_20px_rgba(0,0,0,0.5)]">
+<div class="flex items-center gap-2 max-w-lg mx-auto">
+<button class="w-12 h-12 rounded-lg bg-surface-container-high text-on-surface hover:text-primary flex items-center justify-center shrink-0 transition-colors" id="bookmark-btn" onclick="toggleBookmark()">
+<span class="material-symbols-outlined text-[22px]" id="bookmark-icon">bookmark_border</span>
+</button>
+<button class="w-12 h-12 rounded-lg bg-surface-container-high text-on-surface hover:text-secondary flex items-center justify-center shrink-0 transition-colors" onclick="simulateSwapModal()" title="Simulate Subject Swap">
+<span class="material-symbols-outlined text-[22px]">swap_horiz</span>
+</button>
+<button class="flex-1 h-12 px-space-md rounded-lg bg-primary-container text-on-surface font-headline-sm text-headline-sm font-semibold flex items-center justify-center gap-2 shadow-md hover:bg-surface-container-highest transition-colors">
+<span>Explore 42+ Colleges &amp; Cutoffs</span>
+<span class="material-symbols-outlined text-[20px] text-primary">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  function toggleBookmark() {
+    const icon = document.getElementById('bookmark-icon');
+    const isBookmarked = icon.innerText === 'bookmark';
+    icon.innerText = isBookmarked ? 'bookmark_border' : 'bookmark';
+    if (!isBookmarked) {
+      icon.style.fontVariationSettings = "'FILL' 1";
+    } else {
+      icon.style.fontVariationSettings = "'FILL' 0";
+    }
+  }
+
+  function simulateSwapModal() {
+    alert("Subject Simulation: You can replace 'Applied Math' with 'Commercial Art' or 'Informatics' to check admission eligibility shifts across 42 universities.");
+  }
+</script></main></body></html>
